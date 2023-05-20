@@ -2,4 +2,8 @@ node_modules
 .DS_Store
 package-lock.json
 package.json
+launch.json
+settings.json
+
 all.css.map
+layout.html

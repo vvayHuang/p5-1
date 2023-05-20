@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <style>
+        .container {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <button id="scrollToTop">往上按鈕</button>
+    <div class="container">
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="card-img"><img src="" alt=""></div>
+                    <h3 class="card-title"></h3>
+                    <p class="card-description"></p>
+                    <div class="card-body">
+                        <div class="card-text"><span></span><span></span></div>
+                        <div class="card-text"><span class="card-tag"></span><span class="card-icon"></span></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#scrollToTop').click(function (e) { 
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop:0
+                },1000)
+            });
+        });
+    </script>
+</body>
+
+</html>
